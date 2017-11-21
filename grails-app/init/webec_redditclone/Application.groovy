@@ -1,4 +1,4 @@
-package mvc
+package webec_redditclone
 
 import grails.boot.GrailsApp
 import grails.boot.config.GrailsAutoConfiguration
