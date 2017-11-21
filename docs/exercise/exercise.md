@@ -2,10 +2,14 @@
 
 ## Commit Proposal
 
-Matriculation Number: <to be filled by student>
+Matriculation Number: 16-967-333
 
 Project idea short description: 
 
+Reddit Clone.
+* User Autentifikation
+* Eingabe eines URL's und einer Beschreibung
+* Anzeigen der Posts
 
 ## Project confirmation
 
