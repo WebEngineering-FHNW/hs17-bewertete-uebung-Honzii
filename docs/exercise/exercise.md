@@ -13,8 +13,15 @@ Reddit Clone.
 
 ## Project confirmation
 
-< to be filled by lecturer>
+Confirmed
 
+Cool idea.
+You might want to look into Spring Security and its respective Grails plugins.
+Also this kind of service is alsways prone to xss attacks and spam.
+It would be cool to either address these issues technically or have at
+least a statement about it (where "we ignore these issues" would also be ok).
+
+Go for it!
 
 ## Project delivery <to be filled by student>
 
