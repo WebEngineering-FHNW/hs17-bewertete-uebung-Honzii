@@ -4,7 +4,6 @@
     <meta name="layout" content="main"/>
 </head>
 <body>
-
 <div>
     <g:each in="${com.redditclone.Posts.getAll()}" var="p">
         <h1><br>
@@ -12,7 +11,6 @@
             Erstellt von "${p.author.username}"
         </h1>
     </g:each>
-
 </div>
 </body>
 </html>

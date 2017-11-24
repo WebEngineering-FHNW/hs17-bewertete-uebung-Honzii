@@ -7,7 +7,7 @@
 <h1>Was gibts neues?</h1><br>
 
 <div>
-    <form action="/posts">
+    <form href="/posts/index" action="/posts/index">
         <h3>Title:</h3>
         <input type="text" name="title"><br>
         <h3>URL:</h3>
