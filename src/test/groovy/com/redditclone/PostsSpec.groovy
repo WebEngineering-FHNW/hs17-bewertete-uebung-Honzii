@@ -1,10 +1,9 @@
 package com.redditclone
 
-import com.redditclone.auth.AuthController
-import grails.testing.web.controllers.ControllerUnitTest
+import grails.testing.gorm.DomainUnitTest
 import spock.lang.Specification
 
-class AuthControllerSpec extends Specification implements ControllerUnitTest<AuthController> {
+class PostsSpec extends Specification implements DomainUnitTest<Posts> {
 
     def setup() {
     }

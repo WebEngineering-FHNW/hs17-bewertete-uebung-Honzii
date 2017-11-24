@@ -22,7 +22,6 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hello <sec:username/><span class="caret"></span> </a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Profile</a></li>
                                 <li><g:link controller="logout">Logout</g:link></li>
                             </ul>
                         </li>
@@ -34,8 +33,6 @@
     </div>
 
     <g:layoutBody/>
-
-    <div class="footer" role="contentinfo"></div>
 
     <div id="spinner" class="spinner" style="display:none;">
         <g:message code="spinner.alt" default="Loading&hellip;"/>
