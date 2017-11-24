@@ -9,8 +9,10 @@ class PostsController {
     def springSecurityService
 
     def index() {
-        def post = new Posts(title: params.title, url: params.url)
-        post.author = lookupPerson()
+        def post = new Posts()
+        post.setUrl(params.url)
+        post.setTitel(params.title)
+        post.setAuthor(lookupPerson())
         post.save()
     }
 

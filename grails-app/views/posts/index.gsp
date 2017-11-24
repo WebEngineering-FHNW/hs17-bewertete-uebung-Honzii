@@ -9,11 +9,11 @@
 <div>
     <form action="/posts">
         <h3>Title:</h3>
-        <g:textField type="text" name="title"></g:textField><br>
+        <input type="text" name="title"><br>
         <h3>URL:</h3>
-        <g:textField type="url" name="url"></g:textField>
+        <input type="url" name="url">
         <br /><br />
-        <g:submitButton type="submit" name="Posten"></g:submitButton>
+        <input type="submit" value="Posten">
     </form>
 </div>
 <div>

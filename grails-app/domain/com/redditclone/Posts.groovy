@@ -10,7 +10,7 @@ class Posts {
 
 
     String toString(){
-        titel + "\n" + url + "\n" + "Erstellt von " + author.username
+        titel + "\n" + url + "\n" + "Erstellt von " + author.username + "\n"
     }
 
     static constraints = {
