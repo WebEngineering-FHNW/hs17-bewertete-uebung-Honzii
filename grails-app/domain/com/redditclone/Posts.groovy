@@ -4,10 +4,17 @@ import com.redditclone.auth.*
 
 class Posts {
 
-    String message
+    String titel
     String url
     User author
 
+
+    String toString(){
+        titel + "\n" + url + "\n" + "Erstellt von " + author.username
+    }
+
     static constraints = {
+        titel (blank: false)
+        url (blank: false)
     }
 }

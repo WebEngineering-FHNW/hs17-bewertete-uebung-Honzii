@@ -1,6 +1,6 @@
 package com.redditclone
 
-import com.redditclone.auth.AuthController
+
 import grails.testing.web.controllers.ControllerUnitTest
 import spock.lang.Specification
 

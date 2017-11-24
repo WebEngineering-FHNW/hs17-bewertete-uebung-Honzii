@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="layout" content="main" />
-    <g:set var="entityName" value="${message(code: 'role.label', default: 'Role')}" />
-    <title><g:message code="default.create.label" args="[entityName]" /></title>
+    <meta name="layout" content="main"/>
 </head>
 <body>
+<h1>Was gibts neues?</h1><br>
+
 <div>
-    <g:form url="[action: 'updatePost']" update="messages" name="updateRedditClone">
-    <h3>Title:</h3>
-    <g:textField name="message"/>
-    <br />
-    <h3>URL:</h3>
-    <g:textField name="url"/>
-    <br /><br />
-    <g:submitButton name="post"/>
-    </g:form>
+    <form action="/posts">
+        <h3>Title:</h3>
+        <g:textField type="text" name="title"></g:textField><br>
+        <h3>URL:</h3>
+        <g:textField type="url" name="url"></g:textField>
+        <br /><br />
+        <g:submitButton type="submit" name="Posten"></g:submitButton>
+    </form>
 </div>
-<div id="posts">
-    <g:render template="posts" collection="${message}" var="message"/>
+<div>
+
+    <g:each in="${com.redditclone.Posts.getAll()}" var="p">
+        <h1><br>
+            <a href="${p.url}"> ${p.titel} </a><br>
+            Erstellt von "${p.author.username}"
+        </h1>
+    </g:each>
+
 </div>
 </body>
 </html>
