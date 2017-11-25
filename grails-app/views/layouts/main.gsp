@@ -29,7 +29,7 @@
 
                     <sec:ifLoggedIn>
                         <ul class="nav navbar-nav navbar-left">
-                            <a> Hello <sec:username/></a>
+                            <a href="/posts/index"> Hallo <sec:username/></a>
                         </ul>
                         <ul class="navbar-right">
                             <a href="/createPost" class="button" aria-haspopup="true" role="button">Neuer Post</a>

@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
+    <asset:stylesheet src="application.css"/>
 </head>
 <body>
 <div>

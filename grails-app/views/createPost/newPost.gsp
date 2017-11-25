@@ -4,13 +4,14 @@
     <meta name="layout" content="main"/>
 </head>
 <body>
-<h1>Was gibts neues?</h1><br>
+<br>
+<h1>Was gibts Neues?</h1><br>
 
 <div>
     <form href="/posts/index" action="/posts/index">
-        <h3>Title:</h3>
+        <h1>Title:</h1>
         <input type="text" name="title"><br>
-        <h3>URL:</h3>
+        <h1>URL:</h1>
         <input type="url" name="url">
         <br /><br />
         <input type="submit" value="Posten">
