@@ -20,9 +20,11 @@ class PostsController {
         user.setPassword(params.password)
         user.setFirstName(params.firstName)
         user.setEmail(params.email)
-        user.save(failOnError: true)
+        user.save()
         println ""
+
     }
+
 
     private lookupPerson(){
         User.get(springSecurityService.currentUserId)
