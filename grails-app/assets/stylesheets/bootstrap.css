@@ -117,6 +117,7 @@ textarea {
   font: inherit;
   color: inherit;
 }
+
 button {
   overflow: visible;
 }
@@ -4486,6 +4487,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 @media (min-width: 768px) {
   .navbar-left {
     float: left !important;
+    margin-left: auto;
   }
   .navbar-right {
     float: right !important;

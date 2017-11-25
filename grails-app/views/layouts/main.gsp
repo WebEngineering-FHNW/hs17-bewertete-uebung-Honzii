@@ -16,20 +16,29 @@
 
     <div class="navbar navbar-default navbar-static-top" role="navigation">
         <div class="container">
+            <sec:ifNotLoggedIn>
+                    <ul class="navbar-left">
+                        <a href="/posts" class="button" aria-haspopup="true" role="button">Posts</a>
+                    </ul>
+                    <ul class="navbar-right">
+                        <a href="/login" class="button" aria-haspopup="true" role="button">Login</a>
+                        <a href="/register/register" class="button" aria-haspopup="true" role="button">Registrieren </a>
+                    </ul>
+            </sec:ifNotLoggedIn>
             <div class="navbar-collapse collapse" aria-expanded="false" style="height: 0.8px;">
-                <ul class="nav navbar-nav navbar-left">
+
                     <sec:ifLoggedIn>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hello <sec:username/><span class="caret"></span> </a>
-                            <ul class="dropdown-menu">
-                                <a href="/createPost" class="button" aria-haspopup="true" role="button">Neuer Post</a>
-                                <a href="/posts" class="button" aria-haspopup="true" role="button">Posts</a>
-                                <g:link controller="logout">Logout</g:link>
-                            </ul>
-                        </li>
+                        <ul class="nav navbar-nav navbar-left">
+                            <a> Hello <sec:username/></a>
+                        </ul>
+                        <ul class="navbar-right">
+                            <a href="/createPost" class="button" aria-haspopup="true" role="button">Neuer Post</a>
+                            <a href="/posts" class="button" aria-haspopup="true" role="button">Posts </a>
+                            <g:link controller="logout">Logout</g:link>
+                        </ul>
                     </sec:ifLoggedIn>
                     <g:pageProperty name="page.nav" />
-                </ul>
+
             </div>
         </div>
     </div>

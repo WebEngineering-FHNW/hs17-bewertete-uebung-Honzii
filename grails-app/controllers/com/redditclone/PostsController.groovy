@@ -3,7 +3,7 @@ package com.redditclone
 import com.redditclone.auth.User
 import grails.plugin.springsecurity.annotation.Secured
 
-@Secured(['ROLE_ADMIN', 'ROLE_USER', 'IS_AUTHENTICATED_ANONYMOUSLY'])
+@Secured(['IS_AUTHENTICATED_ANONYMOUSLY'])
 class PostsController {
 
     def springSecurityService
@@ -14,6 +14,13 @@ class PostsController {
         post.setTitel(params.title)
         post.setAuthor(lookupPerson())
         post.save()
+
+        def user = User.create()
+        user.setUsername(params.username)
+        user.setPassword(params.password)
+        user.setFirstName(params.firstName)
+        user.setEmail(params.email)
+        user.save(failOnError: true)
         println ""
     }
 
