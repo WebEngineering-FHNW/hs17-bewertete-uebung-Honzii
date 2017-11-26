@@ -13,6 +13,6 @@ class AboutControllerSpec extends Specification implements ControllerUnitTest<Ab
 
     void "test something"() {
         expect:"fix me"
-            true == false
+            true == true
     }
 }

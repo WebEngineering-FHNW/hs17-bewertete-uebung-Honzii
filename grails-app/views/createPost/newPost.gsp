@@ -5,7 +5,7 @@
 </head>
 <body>
 <br>
-<h1>Was gibts Neues?</h1><br>
+<h1><b>Was gibts Neues?</b></h1><br>
 
 <div>
     <form method="post" href="/posts/index" action="/posts/index">
