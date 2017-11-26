@@ -8,6 +8,7 @@
 
 <div>
     <br>
+    <h1><b>Registrieren</b></h1><br>
     <form method="post" action="/posts/index">
         <h1>Username:</h1>
         <input type="text" name="username"><br>

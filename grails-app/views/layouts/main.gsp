@@ -19,9 +19,10 @@
             <div class="navbar-collapse collapse" aria-expanded="false" style="height: 0.8px;">
                 <sec:ifNotLoggedIn>
                         <ul class="navbar-left">
-                            <a href="/posts" class="button" aria-haspopup="true" role="button">Posts</a>
+                            <a href="/posts/index" class="button" aria-haspopup="true" role="button">Posts</a>
                         </ul>
                         <ul class="navbar-right">
+                            <a href="/about/about" class="button" aria-haspopup="true" role="button">About</a>
                             <a href="/login" class="button" aria-haspopup="true" role="button">Login</a>
                             <a href="/register/register" class="button" aria-haspopup="true" role="button">Registrieren </a>
                         </ul>
@@ -33,8 +34,9 @@
                         <a href="/posts/index"> Hallo <sec:username/></a>
                     </ul>
                     <ul class="navbar-right">
+                        <a href="/about/about" class="button" aria-haspopup="true" role="button">About</a>
                         <a href="/createPost" class="button" aria-haspopup="true" role="button">Neuer Post</a>
-                        <a href="/posts" class="button" aria-haspopup="true" role="button">Posts </a>
+                        <a href="/posts/index" class="button" aria-haspopup="true" role="button">Posts </a>
                         <g:link controller="logout">Logout</g:link>
                     </ul>
                 </sec:ifLoggedIn>

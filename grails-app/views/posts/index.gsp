@@ -6,7 +6,8 @@
 </head>
 <body>
 <div>
-
+    <br>
+    <h1><b>Posts</b></h1>
     <g:each in="${com.redditclone.Posts.getAll()}" var="p">
         <h1><br>
             <a href="${p.url}"> ${p.titel} </a><br>

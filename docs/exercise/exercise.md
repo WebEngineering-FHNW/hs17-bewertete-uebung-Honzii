@@ -25,18 +25,20 @@ Go for it!
 
 ## Project delivery <to be filled by student>
 
-How to start the project: (if other than `grailsw run-app`)
+How to start the project: grailsw run-app
 
-How to test the project:  (if other than `grailsw test-app`)
+How to test the project:  grailsw test-app
 
-Project description:      (if other than `/index.html`)
+Project description: /about.gsp
 
 External contributions:
+Keine direkten Codekopien
 
 Other comments: 
+Die Projekt Beschreibung ist direkt auf der Homepage ersichtlich und unter dem "About" Button erreichbar.
 
 I'm particular proud of:
-
+Auf die Login Funktion und die Einschränkung, dass nur registrierte Nutzer Posts erstellen können.
 
 ## Project grading 
 
