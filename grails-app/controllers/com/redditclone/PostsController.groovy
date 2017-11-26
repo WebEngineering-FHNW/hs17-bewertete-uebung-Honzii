@@ -34,8 +34,8 @@ class PostsController {
             user.save()
         }
 
-        println ""
-
+        grails_artefact_controller_support_RequestForwarder__urlConverter
+        println()
     }
 
     private lookupPerson(){

@@ -8,7 +8,7 @@
 
 <div>
     <br>
-    <form action="/posts/index">
+    <form method="post" action="/posts/index">
         <h1>Username:</h1>
         <input type="text" name="username"><br>
         <h1>Password:</h1>
