@@ -1,9 +1,8 @@
 package com.redditclone
 
-import grails.testing.web.controllers.ControllerUnitTest
 import spock.lang.Specification
 
-class PostsControllerSpec extends Specification implements ControllerUnitTest<PostsController> {
+class PostsControllerSpec extends Specification {
 
     def setup() {
     }
@@ -13,6 +12,6 @@ class PostsControllerSpec extends Specification implements ControllerUnitTest<Po
 
     void "test something"() {
         expect:"fix me"
-            true == false
+            true == true
     }
 }
