@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
-    <asset:stylesheet src="application.css"/>
+    <title>Posts</title>
 </head>
 <body>
 <div>

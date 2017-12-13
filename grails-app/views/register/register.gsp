@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
-    <asset:stylesheet src="application.css"/>
+    <title>Registrieren</title>
 </head>
 <body>
 
