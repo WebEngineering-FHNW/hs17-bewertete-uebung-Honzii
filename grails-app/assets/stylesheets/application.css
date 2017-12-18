@@ -40,3 +40,14 @@ body{
     background-repeat: no-repeat;
 
 }
+
+.message{
+    border-color: transparent;
+    background-image: none;
+    shape-rendering: none;
+    box-shadow: none;
+    color: dimgrey;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 2.3%;
+}

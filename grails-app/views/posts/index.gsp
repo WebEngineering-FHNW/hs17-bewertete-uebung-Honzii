@@ -6,7 +6,9 @@
 </head>
 <body>
 <div>
-    <br>
+    <div class="message" style="display: block">
+        <b>${flash.message}</b>
+    </div>
     <h1><b>Posts</b></h1>
     <g:each in="${com.redditclone.Posts.getAll()}" var="p">
         <h1><br>

@@ -28,11 +28,13 @@ class PostsController {
         post.setAuthor(lookupPerson())
         post.save()
 
-        if (params.username != "" && unique(params.username) && params.password != "" && params.email != "" && params.firstName != ""){
+        if (params.username != null && unique(params.username) && params.password != "" && params.email != "" && params.firstName != ""){
             flash.message = "User wurde erfolgreich erstellt!"
             def user = User.findOrSaveWhere(username: params.username, password: params.password, firstName: params.firstName, email: params.email)
             UserRole.create(user,userRole, true)
             user.save()
+        } else {
+            flash.error = "User konnte nicht erstellt werden!"
         }
 
         grails_artefact_controller_support_RequestForwarder__urlConverter
