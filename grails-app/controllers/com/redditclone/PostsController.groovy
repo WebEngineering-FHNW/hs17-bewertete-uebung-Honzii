@@ -28,7 +28,8 @@ class PostsController {
         post.setAuthor(lookupPerson())
         post.save()
 
-        if (params.username != null && unique(params.username)){
+        if (params.username != "" && unique(params.username) && params.password != "" && params.email != "" && params.firstName != ""){
+            flash.message = "User wurde erfolgreich erstellt!"
             def user = User.findOrSaveWhere(username: params.username, password: params.password, firstName: params.firstName, email: params.email)
             UserRole.create(user,userRole, true)
             user.save()
