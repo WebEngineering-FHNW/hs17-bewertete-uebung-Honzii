@@ -42,4 +42,28 @@ Auf die Login Funktion und die Einschränkung, dass nur registrierte Nutzer Post
 
 ## Project grading 
 
-< to be filled by lecturer>
+Description: not the static html as requested. Validation shows 5 errors (< ul > and < a > mixing).
+h2 is for headings, not for running text.
+Works: NullPointerException beim Registrieren (UserRole.groovy:54).
+
+Functionality: 
+Basic navigation for login, create post, show all posts.
+User input for login plus post.
+Syntactic in-place validation (email, link), user validation against DB.
+Domain with user, role, their relation and posts as entities.
+
+Engineering:
+Sensible number of git commits, commit comments could be more descriptive.
+Tests are mostly true == true, which give a wrong impression when one sees them passing.
+PostsSpec tests one happy path.
+Comments are sparse - but there is little need for commenting.
+Naming is ok.
+There is some duplication due to the use of static scaffolding views where 
+dynamic scaffolding would suffice but that is beyond our scope, so full points here.
+
+I award two extra points for the additional effort that it takes
+to learn how role-based security with Spring works (we did not cover this topic
+in the lectures).
+
+Congratulations!
+Total grade: 5.8
